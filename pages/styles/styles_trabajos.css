@@ -201,15 +201,15 @@ footer{
 
     .menu{
         height: 10vh;
-        width: 50%;
+        width: 60%;
         /* background-color: red; */
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .menu a{
-        margin:0 7px;
+        margin:0;
         border: 2px outset;
     }
 
@@ -265,7 +265,7 @@ footer{
 
 
 /* movil pantalla más grande*/
-@media (max-width: 450px){
+@media (min-width: 329px) and (max-width: 450px){
 
     nav{
         height: 10vh;
@@ -273,15 +273,17 @@ footer{
 
     .menu{
         height: 10vh;
-        width: 50%;
+        width: 70%;
         /* background-color: red; */
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .menu a{
-        margin:0 7px;
+        margin:0;
+        font-size: 4vw;
+        text-decoration: none;
         border: 2px outset;
     }
 
