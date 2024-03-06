@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
           window.location.href = targetUrl;  // Redirige a la nueva página después de la demora
           
-        }, 1300); //este 1500 indica que son 1.5 segundos(1500 milisegundos)
+        }, 1000); //este 1500 indica que son 1.5 segundos(1500 milisegundos)
 
         setTimeout(function() {
             location.reload();
