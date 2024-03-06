@@ -192,7 +192,7 @@ footer{
 }
 
 
-/* movil pantalla grande*/
+/* movil pantalla chica*/
 @media (max-width: 328px){
 
     nav{
@@ -263,7 +263,83 @@ footer{
     }
 }
 
-@media (max-height:414px) and (max-width: 794px){
+
+/* movil pantalla más grande*/
+@media (max-width: 450px){
+
+    nav{
+        height: 10vh;
+    }
+
+    .menu{
+        height: 10vh;
+        width: 50%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu a{
+        margin:0 7px;
+        border: 2px outset;
+    }
+
+    .trabajo1{
+        width: 100%;
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+
+    .textdescripcion{
+        /* display: none; */
+        font-size: 3vw;
+        width: 100%;
+        height: auto;
+    }
+
+    .slider1{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .trabajo2{
+        width: 100%;
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+
+    /* .textdescripcion li{
+        font-size: 2vh;
+    } */
+
+    .text2{
+        /* display: none; */
+        font-size: 3vw;
+        width: 100%;
+        margin: 0;
+        height: auto;
+    }
+
+    .slider2{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .enlaces {
+        width: 100%;
+    }
+
+    .enlaces img{
+        height: 5vh;
+    }
+}
+
+
+
+
+/* horizontal movil chico */
+@media (max-height:300px) and (max-width: 794px){
     .menu{
         height: 10vh;
         width: 80%;
@@ -279,7 +355,7 @@ footer{
     }
 
     .trabajo1{
-        height: 80vh;
+        height: 90vh;
     }
 
     .textdescripcion{
@@ -292,12 +368,12 @@ footer{
     }
 
     .slider1{
-        height: 80vh;
+        height: 90vh;
         width: 40%;
     }
 
     .slider1 ul{
-        height: 80vh;
+        height: 90vh;
     }
 
     .slider1 img{
@@ -306,7 +382,7 @@ footer{
     }
 
     .trabajo2{
-        margin-top: 1vh;
+        margin-top: 5vh;
         height: 40vh;
     }
 
@@ -325,8 +401,91 @@ footer{
         padding:3vh;
     }
 
+    .enlaces{
+        width: 60%;
+        justify-content: space-between;
+    }
     .enlaces img{
+        width: 100%;
+        height: 10vh;
+    }
+}
+
+
+
+
+
+/* horizontal movil grande*/
+@media (max-height:420px) and (max-width: 794px){
+    .menu{
+        height: 10vh;
+        width: 80%;
+        margin: 2vh auto;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+
+    .menu a{
+        margin:0 7px;
+        border: 2px outset;
+    }
+
+    .trabajo1{
+        height: 90vh;
+    }
+
+    .textdescripcion{
+        width: 60%;
+        font-size: 5vh;
+    }
+
+    .textdescripcion li{
+        font-size: 3vh;
+    }
+
+    .slider1{
+        height: 90vh;
+        width: 40%;
+    }
+
+    .slider1 ul{
+        height: 90vh;
+    }
+
+    .slider1 img{
+        padding:0;
+        height: 100%;
+    }
+
+    .trabajo2{
+        margin-top: 5vh;
+        height: 40vh;
+    }
+
+    .text2{
+        font-size: 3vh;
+        height: 40vh;
+    }
+
+    .slider2 img{
+        height: 40vh;
+    }
+
+    footer{
+        margin-top: 10vh;
+        height: 15vh;
+        padding:3vh;
+    }
+
+    .enlaces{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .enlaces img{
+        width: 12vw;
         height: 10vh;
     }
 
 }
+
