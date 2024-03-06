@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Saiyan-sans;
+}
+
+body{
+    background-image: linear-gradient(red,yellow,rgba(114, 14, 114, 0.74));
+}
+
+@font-face{
+    font-family: 'Saiyan-sans';
+    src:url(../../Fuentes/Saiyan-sans/Saiyan-Sans.ttf);   
+}
+
+nav{
+    background-color: blue;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../archivos/img/sobremi/bardock.png),url(../../archivos/img/sobremi/bardockssj.png);
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: -8% 15%, 107% 15%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    width: 50%;
+    
+}
+
+/* Aqui cambiamos la fuente de las letras del menu del nav y editamos tamaño y borde */
+.menu a {
+    text-decoration-line: none;
+    color: black;
+    font-size: 3vh;
+    border: 5px outset;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1vh;
+}
+
+.menu a:hover {
+    color: yellow;
+    background: grey;
+    -webkit-text-stroke: 2px black;
+}
+
+.menu a:visited{
+    border-color: orange;
+}
+
+.OZ{
+    color:orange;
+}
+
+.sobremi{
+    padding: 1vh;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../../archivos/img/sobremi/PARQUE\ LULU\ 7\ AGOSTO\ 546.JPG);
+    background-color: rgba(255, 255, 255, 0.534);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-block: 2px solid grey;
+    margin-top: 2vh;
+}
+
+.miInfo{
+    width: 70%;
+    font-size: 1.8vh;
+    padding-left: 1vh;
+}
+
+.miInfo p {
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    font-size: 8vh;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 3vw;
+}
+
+/* le damos un z-index  -1 para cuando las imagenes crezcan, no se coloque nada por encima en el proceso */
+.figuras{
+    width: 100%;
+    height: 55vh;
+    background-image: radial-gradient(orange,red,orange);
+    display:flex;
+    z-index: -1;
+    border-block: 2px solid grey;
+}
+
+.imagenesFase{
+    width: 20%;
+}
+
+.contenedorImg{
+    width: 80%;
+    background-color: #303030;    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow:auto;
+    z-index: 1;
+}
+
+.fondo1{
+    width: 13%;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../archivos/img/sobremi/cha_base_03_04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    /* background-color: aquamarine; */
+}
+
+/* Para las transiciones usamos el:transition-timing-function:cubic-bezier(), en esta pagina podemos ajustar como queremos que sea los efectos https://cubic-bezier.com/#1,-0.18,0,1.43 */
+.fondo1 img{
+    width: 50%;
+    border-radius: 20%;
+    /* padding: 10px; */
+    transition: 2s ease;
+    z-index:1;
+    transition-timing-function:cubic-bezier(1,-0.18,0,1.43);
+}
+
+.fila1 img:hover{
+    width: 350px;
+    z-index: 3;
+    transform: translate(0,130px);
+}
+
+.filaMedio img:hover{
+    width: 400px;
+    z-index: 3;
+}
+
+.filaUlti img:hover{
+    width: 400px;
+    z-index: 3;
+    transform: translate(0,-100px);
+}
+
+.cartas{
+    width: 100%;
+    height: 55vh;
+    background-image: radial-gradient(rgba(255, 255, 0, 0.479),white,rgba(255, 255, 0, 0.479));
+    /* background-color: rgba(255, 255, 0, 0.479); */
+    display:flex;
+    z-index: -1;
+    flex-direction: row-reverse;
+    border-block: 2px solid grey;
+}
+
+.fondo2{
+    width: 13%;
+    height: 12.5rem;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../archivos/img/sobremi/23tCQT4.png);
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.fondo2 img{
+    width: 50%;
+    border-radius: 20%;
+    /* padding: 10px; */
+    transition: 2s ease;
+    z-index:1;
+    transition-timing-function:cubic-bezier(1,-0.18,0,1.43);
+}
+
+.model{
+    width: 100%;
+    height: 55vh;
+    /* background-color: rgba(114, 14, 114, 0.74); */
+    background-image: radial-gradient(orange,rgba(114, 14, 114, 0.74));
+    display:flex;
+    z-index: -1;
+    border-block: 2px solid red;
+}
+
+.fondo3{
+    width: 13%;
+    height: 12.5rem;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../archivos/img/sobremi/D0LpV5H.png);
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.fondo3 img{
+    width: 50%;
+    border-radius: 20%;
+    /* padding: 10px; */
+    transition: 2s ease;
+    z-index:1;
+    transition-timing-function:cubic-bezier(1,-0.18,0,1.43);
+}
+
+
+footer{
+    
+    margin-top: 2vh;
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(blue,white, blue);
+    display:flex;
+    align-items: center;
+}
+
+.enlaces{
+    margin: 10px auto;    
+    width: 50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces a{
+    width: 8%;
+    height: 5vh;
+    border-radius: 20%;
+}
+
+.enlaces img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+/* movil pantalla grande*/
+@media (max-width: 576px){
+    
+nav{
+    background-size: 20vh;
+    background-position: -20% 18%, 120% 15%;
+}
+
+.menu{
+    width: 80%;
+    
+}
+
+/* Aqui cambiamos la fuente de las letras del menu del nav y editamos tamaño y borde */
+.menu a {
+    font-size: 1.5vh;
+    border: 3px outset;
+}
+
+.sobremi{
+    height: 80vh;
+    background-position: center bottom;
+}
+
+h1 {
+    letter-spacing: 1vw;
+}
+
+.miInfo{
+    width: 100%;
+    font-size: 3vw;
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 3vw;
+}
+
+
+
+.figuras{
+    width: 100%;
+    height: 55vh;
+    background-image: radial-gradient(orange,red,orange);
+    display:flex;
+    z-index: -1;
+    border-block: 2px solid grey;
+}
+
+.imagenesFase{
+    width: 20%;
+}
+
+.contenedorImg{
+    width: 80%;
+    background-color: #303030;    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow:auto;
+    z-index: 1;
+}
+
+.fondo1{
+    width: 13%;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../archivos/img/sobremi/cha_base_03_04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+    /* background-color: aquamarine; */
+}
+
+
+.fondo1 img{
+    width: 50%;
+    border-radius: 20%;
+    /* padding: 10px; */
+    transition: 2s ease;
+    z-index:1;
+    transition-timing-function:cubic-bezier(1,-0.18,0,1.43);
+}
+
+.fila1 img:hover{
+    width: 350px;
+    z-index: 3;
+    transform: translate(0,130px);
+}
+
+.filaMedio img:hover{
+    width: 400px;
+    z-index: 3;
+}
+
+.filaUlti img:hover{
+    width: 400px;
+    z-index: 3;
+    transform: translate(0,-100px);
+}
+
+}

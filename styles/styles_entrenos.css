@@ -1,0 +1,1280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Saiyan-sans;
+}
+
+@font-face{
+    font-family: 'Saiyan-sans';
+    src:url(../../Fuentes/Saiyan-sans/Saiyan-Sans.ttf);
+
+    
+}
+
+@font-face {
+    font-family: 'nrkis';
+    src:url(../../Fuentes/narkisim/nrkis.ttf);
+}
+
+body{
+    background-image:linear-gradient(blue,white);
+    background-repeat: no-repeat;
+}
+
+/* Zona nav */
+nav{
+    /* background-color: aqua; */
+    margin: 10px 10px 30px 10px;
+    height: 30vh;
+}
+
+h1{
+    color:yellow;
+    font-size: 70px;
+    border-bottom: 1px solid;
+    -webkit-text-stroke: 4px black;
+    /* background-image: url(../../archivos/img/entreno/h1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.titulo{
+    text-align: center;
+    
+}
+
+.menu{
+    margin-top: 10px;
+}
+
+/* Aqui cambiamos la fuente de las letras del menu del nav y editamos tamaño y borde */
+.menu a {
+    text-decoration-line: none;
+    margin-right: 60px;
+    color: black;
+    font-size: 40px;
+    padding: 5px;
+    border: 5px outset;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.menu a:hover {
+    color: yellow;
+    background: grey;
+    -webkit-text-stroke: 2px black;
+}
+
+.menu a:visited{
+    border-color: orange;
+}
+
+.OZ{
+    color:orange;
+}
+
+
+.info{
+    margin:20px auto;
+    width: 90%;
+    background-color: white;
+    background-image: radial-gradient(red,blue);
+    border-radius: 20px;
+    border: 1px solid;
+    background-image: url(../../archivos/img/entreno/training-super-saiyan.jpg),url(../../archivos/img/entreno/nopainnosaiyan.jpg);
+    background-position: left,right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.info h2{
+    padding-top: 5px;
+    font-family: nrkis;
+    text-align: center;
+    font-size: 50px;
+}
+
+.info p{
+    font-family: nrkis;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+}
+
+#infoBajo a{
+    font-family: nrkis;
+    color:red;
+    -webkit-text-stroke: 1px black;
+    text-decoration: none;
+
+}
+
+
+/* Barra lateral izq fixed */
+.barraLateral {
+    box-sizing: border-box;
+    width: max(150px);
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+    /* background-color: gold; */
+}
+
+.barraLateral h2{
+    color:yellow;    
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+.barraLateral h3{
+    color:yellow;
+    -webkit-text-stroke: 2px black;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* El contenido de la pagina */
+main{
+    background: orangered;
+    margin-left: max(10%, 200px);
+    margin-top: 5%;
+    width: 85%;
+    height: 100%;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+main h2{
+    color:yellow;
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 5px dashed black;
+}
+
+.EntrenoFacil{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.facil1 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+/* Aqui editamos el nuevo div que se crea al pasar el raton sobre las imagenes */
+.descripcion1 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 35rem;
+    top:29.5rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.facil2 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion2 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 69rem;
+    top:29.5rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.facil3 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion3 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 70.5rem;
+    top:29.5rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table, th, td{
+    border:1px inset;
+    border-radius: 10px;
+}
+
+.tabla{
+    /* background-color: rgba(127, 255, 212, 0.89); */
+    width: 80%;
+    height: 35%;
+    margin: 50px auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+#tablaTitulo{
+    color:black;
+    background-color: yellow;
+    background-image: url(../../archivos/img/entreno/bardock.png), url(../../archivos/img/entreno/Gurren_Lagann.png);
+    background-position: left, right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stats{
+    color:white;
+    background-color: black;
+}
+.imgBola{
+    width: 25%;
+    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+#tiempoFacil{
+    background-image: url(../../archivos/img/entreno/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8vw 15vh;
+}
+
+#dificultadFacil{
+    background-image: url(../../archivos/img/entreno/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#espFacil{
+    background-image: url(../../archivos/img/entreno/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#satFacil{
+    background-image: url(../../archivos/img/entreno/3.png);
+    background-repeat: no-repeat;
+    background-position: center 3.2vh;
+    background-size:6.2vw 12vh;
+}
+
+
+/* Entrenos nivel medio */
+.EntrenoMedio{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.medio1 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion4 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 35rem;
+    top:73.6rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.medio2 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion5 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 69rem;
+    top:73.6rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.medio3 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion6 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 70.5rem;
+    top:73.6rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tablaTitulo2{
+    color:black;
+    background-color: yellow;
+    background-image: url(../../archivos/img/entreno/bardock\ ssj.png), url(../../archivos/img/entreno/arc\ gurren\ lagann.png);
+    background-position: left, right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#tiempoMedio{
+    background-image: url(../../archivos/img/entreno/3.png);
+    background-repeat: no-repeat;
+    background-position: center 3.2vh;
+    background-size:6.2vw 12vh;
+}
+
+#dificultadMedio{
+    background-image: url(../../archivos/img/entreno/3.png);
+    background-repeat: no-repeat;
+    background-position: center 3.2vh;
+    background-size:6.2vw 12vh;
+}
+
+#espMedio{
+    background-image: url(../../archivos/img/entreno/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#satMedio{
+    background-image: url(../../archivos/img/entreno/5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+
+/* Entrenamientos nivel dificil */
+
+.EntrenoDificil{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.dificil1 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion7 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 35rem;
+    top: 117.6rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dificil2 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion8 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 69rem;
+    top:117.6rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dificil3 img{
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion9 {
+    width: 17%;
+    height: 20vh;
+    color:white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 70.5rem;
+    top:117.6rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tablaTitulo3{
+    color:black;
+    background-color: yellow;
+    background-image: url(../../archivos/img/entreno/bardock\ ssj3.png), url(../../archivos/img/entreno/sggl.png);
+    background-position: left, right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#tiempoDificil{
+    background-image: url(../../archivos/img/entreno/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#dificultadDificil{
+    background-image: url(../../archivos/img/entreno/5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#espDificil{
+    background-image: url(../../archivos/img/entreno/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#satDificil{
+    background-image: url(../../archivos/img/entreno/6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+
+/* SUPER ENTRENO */
+
+.SuperEntreno{
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.super img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10%;
+}
+
+.descripcion10 {
+    width: 30%;
+    height: 20vh;
+    color:white;
+    background-color: black;
+    -webkit-text-stroke: 0.5px black;
+    background-image: url(../../archivos/img/entreno/f1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position:absolute;
+    left: 16rem;
+    top: 161.66rem;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+#tablaTitulo4{
+    color:black;
+    background-color: yellow;
+    background-image: url(../../archivos/img/entreno/Bardock\ ssj4.png), url(../../archivos/img/entreno/ttgl.png);
+    background-position: left, right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#tiempoSuper{
+    background-image: url(../../archivos/img/entreno/6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#dificultadSuper{
+    background-image: url(../../archivos/img/entreno/6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#espSuper{
+    background-image: url(../../archivos/img/entreno/5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:8vw 15vh;
+}
+
+#satSuper{
+    background-image: url(../../archivos/img/entreno/7.png);
+    background-repeat: no-repeat;
+    background-position: center 3.2vh;
+    background-size:6.2vw 12vh;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    height: 13vh;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-size: 35px;
+    -webkit-text-stroke: 1px black;
+}
+
+#bardock-Goku{
+    margin-bottom: 25px;
+}
+
+
+
+
+/* Ahora empezamos con el responsive  */
+
+/* movil pantalla grande*/
+@media (max-width: 576px){
+    .titulo h1{        
+        font-size: 20px;
+        line-height: 2;
+        height: 3rem;
+    }
+
+    .menu{
+        margin-top: 10px;
+    }
+    .menu a{
+        font-size: 15px;
+        margin: 9px;
+    }
+
+    .info{
+        height: 37rem;
+        background-size: 100% 170px;
+        background-position: top,bottom;
+    }
+
+    .info h2{
+        font-size: 35px;
+        color: red;
+        margin-top: 11rem;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .info p{
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+
+    .barraLateral {
+        width: 20%;
+        height: 70vh;
+        position: absolute;
+        display:flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        top: 45rem;
+        padding: 25px 0;
+    }
+    
+    .barraLateral h2{
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    
+    .barraLateral h3{
+
+        text-align: center;
+        width: 100%;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+
+    .barraLateral img{
+       width: 90px;
+    }
+
+
+    main{
+        width: 70%;
+        margin-top: 30rem;
+        margin-left: 7rem;
+        height: 100%;
+    }
+
+    main h2{
+        padding-top: 10px;
+        font-size: 25px;
+        letter-spacing: 4px;
+        color:orange;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .EntrenoFacil{
+        height: 5rem;
+    }
+
+    .EntrenoFacil img{
+        width: 100%;
+        height: 5rem;
+        justify-content: space-between;
+    }
+
+    .facil1{
+        width: 25%;
+    }
+
+    .facil2{
+        width: 25%;
+    }
+    .facil3{
+        width: 25%;
+    }
+
+    .tabla{
+        width: 16rem;
+        margin: 20px auto;
+    }
+
+    .tabla th{        
+        font-size: 17px;
+        height: 100px;
+        letter-spacing: 4px;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .tabla td{
+        color: white;
+        font-size: 13px;
+    }
+
+    .imgBola{
+        height: 5rem;
+        
+    }
+
+    #tiempoFacil{
+        background-size: 50px 50px;
+    }
+
+    #tiempoMedio{
+        background-size: 40px 40px;
+    }
+
+    #tiempoDificil{
+        background-size: 50px 50px;
+    }
+
+    #tiempoSuper{
+        background-size: 50px 50px;
+    }
+
+    #dificultadFacil{
+        background-size: 50px 50px;
+    }
+
+    #dificultadMedio{
+        background-size: 40px 40px;
+    }
+
+    #dificultadDificil{
+        background-size: 50px 50px;
+    }
+
+    #dificultadSuper{
+        background-size: 50px 50px;
+    }
+
+    #espFacil{
+        background-size: 50px 50px;
+    }
+
+    #espMedio{
+        background-size: 50px 50px;
+    }
+
+    #espDificil{
+        background-size: 50px 50px;
+    }
+
+    #espSuper{
+        background-size: 50px 50px;
+    }
+
+    #satFacil{
+        background-size: 40px 40px;
+    }
+
+    #satMedio{
+        background-size: 50px 50px;
+    }
+
+    #satDificil{
+        background-size: 50px 50px;
+    }
+
+    #satSuper{
+        background-size: 40px 40px;
+    }
+
+
+    .EntrenoMedio{
+        height: 5rem;
+    }
+
+    .EntrenoMedio img{
+        width: 100%;
+        height: 5rem;
+        justify-content: space-between;
+    }
+
+    .medio1{
+        width: 25%;
+    }
+
+    .medio2{
+        width: 25%;
+    }
+    .medio3{
+        width: 25%;
+    }
+
+    .EntrenoDificil{
+        height: 5rem;
+    }
+
+    .EntrenoDificil img{
+        width: 100%;
+        height: 5rem;
+        justify-content: space-between;
+    }
+
+    .dificil1{
+        width: 25%;
+    }
+
+    .dificil2{
+        width: 25%;
+    }
+    .dificil3{
+        width: 25%;
+    }
+
+    .SuperEntreno{
+        height: 5rem;
+    }
+
+    .SuperEntreno img{
+        width: 100%;
+        height: 5rem;
+        justify-content: space-between;
+    }
+
+    .super1{
+        width: 25%;
+    }
+
+    .super2{
+        width: 25%;
+    }
+    .super3{
+        width: 25%;
+    }
+
+
+    .descripcion1{
+        display: none;
+    }
+
+    .descripcion2{
+        display: none;
+    }
+
+    .descripcion3{
+        display: none;
+    }
+
+    .descripcion4{
+        display: none;
+    }
+
+    .descripcion5{
+        display: none;
+    }
+
+    .descripcion6{
+        display: none;
+    }
+
+    .descripcion7{
+        display: none;
+    }
+
+    .descripcion8{
+        display: none;
+    }
+
+    .descripcion9{
+        display: none;
+    }
+
+    .descripcion10{
+        display: none;
+    }
+}
+
+/* movil mas chico*/  
+@media (max-width: 328px){
+
+    .titulo h1{
+        -webkit-text-stroke: 0.9px red;
+        font-size: 16px;
+        line-height: 2;
+        height: 2rem;
+    }
+
+    .menu{
+        margin-top: 10px;
+    }
+    .menu a{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin: 9px;
+    }
+
+    .info h2{
+        font-size: 2rem;
+        color: red;
+        margin-top: 11rem;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .info p{
+        width: 100%;
+        margin-top: 0px;
+        font-size: 17px;
+    }
+
+
+    .barraLateral {
+        margin: 5px;
+        margin-top: 7rem;
+        transition: 1s ease;
+    }
+
+
+    main{
+        width: 60%;
+        margin-top: 42rem;
+    }
+
+    main h2{
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .EntrenoFacil{
+        height: 25rem;
+        flex-wrap: wrap;
+    }
+
+    .EntrenoFacil img{
+        width: 100%;
+        height: 7rem;
+    }
+
+    .facil1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .facil1 a{
+        width: 80%;
+    }
+
+
+    .facil2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .facil2 a{
+        width: 80%;
+    }
+
+    .facil3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .facil3 a{
+        width: 80%;
+    }
+
+    .tabla{
+        display: none;
+    }
+    
+
+
+    .EntrenoMedio{
+        height: 25rem;
+        flex-wrap: wrap;
+    }
+
+    .EntrenoMedio img{
+        width: 100%;
+        height: 7rem;
+    }
+
+    .medio1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .medio1 a{
+        width: 80%;
+    }
+
+    .medio2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .medio2 a{
+        width: 80%;
+    }
+
+    .medio3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .medio3 a{
+        width: 80%;
+    }
+
+    .EntrenoDificil{
+        height: 25rem;
+        flex-wrap: wrap;
+    }
+
+    .EntrenoDificil img{
+        width: 100%;
+        height: 7rem;
+        
+    }
+
+    .dificil1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dificil1 a{
+        width: 80%;
+    }
+
+    .dificil2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dificil2 a{
+        width: 80%;
+    }
+
+    .dificil3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dificil3 a{
+        width: 80%;
+    }
+
+    .SuperEntreno{
+        height: 8rem;
+        align-items: center;
+    }
+
+
+    footer{
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+    }
+
+    footer h2{
+        z-index: 1;
+    }
+    footer img{
+        width: 18vw;
+        z-index: 0;
+
+    }
+
+    #bardock-Goku{
+        margin-top: 20px;
+    }
+
+}
+
+/* horizontal */
+@media (max-height:414px) and (max-width: 794px){
+
+    h1{
+        font-size: 2rem;
+        -webkit-text-stroke: 0.9px red;
+        letter-spacing: 1px;
+    }
+    
+    .menu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu a{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .info{
+        height: 10rem;
+    }
+
+    .info h2{
+        color: red;
+        padding-left: 25px;
+        font-size: 17px;      
+        -webkit-text-stroke: 1px black;
+    }
+
+    .info p{
+        padding-left: 25px;
+        width: 60%;
+        font-size: 14px;
+        margin-top: 10px;
+        
+    }
+
+    #infoBajo a{
+        -webkit-text-stroke: 0.4px black;
+    }
+
+
+.barraLateral{
+    width: 20%;
+    letter-spacing: 4px;
+    transition: 1s ease;
+}
+
+.barraLateral h2{
+    text-align: left;
+        font-size: 3.2vw;
+    }
+
+    .barraLateral h3{
+        font-size: 2vw;
+        text-align: left;
+        -webkit-text-stroke: 0.4px black;
+    }
+
+.barraLateral img{
+    width: 10vw;
+        height: 12vh;
+    }
+
+
+    main{
+        margin-top: 220px;
+        width: 75%;
+        margin-left: 20%;
+    }
+
+    main h2{
+        letter-spacing: 5px;
+    }
+
+    .EntrenoFacil img{
+        width: 100%;
+    }
+
+    .EntrenoMedio img{
+        width: 100%;
+    }
+
+    .EntrenoDificil img{
+        width: 100%;
+    }
+
+    .SuperEntreno img{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .tabla{
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    #tablaTitulo{
+        padding-top: 5px;
+        color:red;
+        letter-spacing: 3px;
+        -webkit-text-stroke: 0.7px black;
+    }
+
+    .stats{
+        font-size: 2vw;
+        height: 15vh;
+    }
+
+
+
+    footer{
+        height: 20vh;
+        font-size: 1.6rem;
+        letter-spacing: 3px;
+    }
+
+    footer h2{
+        z-index: 1;
+    }
+    footer img{
+        width: 10vw;
+        z-index: 0;
+
+    }
+
+    #bardock-Goku{
+        margin-top: 20px;
+    }
+}
