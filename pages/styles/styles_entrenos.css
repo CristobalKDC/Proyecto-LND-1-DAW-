@@ -26,12 +26,12 @@ body{
 nav{
     /* background-color: aqua; */
     margin: 10px 10px 30px 10px;
-    height: 30vh;
+    height: 100%;
 }
 
 h1{
     color:yellow;
-    font-size: 70px;
+    font-size: 10vh ;
     border-bottom: 1px solid;
     -webkit-text-stroke: 4px black;
     /* background-image: url(../../archivos/img/entreno/h1.png);
@@ -48,7 +48,7 @@ h1{
 }
 
 .menu{
-    margin-top: 10px;
+    margin-top: 3vh;
 }
 
 /* Aqui cambiamos la fuente de las letras del menu del nav y editamos tamaño y borde */
@@ -57,8 +57,8 @@ h1{
     margin-right: 60px;
     color: black;
     font-size: 40px;
-    padding: 5px;
-    border: 5px outset;
+    padding: 1vh;
+    border: 0.5vh outset;
     border-radius: 10px;
     background-color: white;
 }
@@ -66,7 +66,7 @@ h1{
 .menu a:hover {
     color: yellow;
     background: grey;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 1px black;
 }
 
 .menu a:visited{
@@ -79,7 +79,7 @@ h1{
 
 
 .info{
-    margin:20px auto;
+    margin:2vh auto;
     width: 90%;
     background-color: white;
     background-image: radial-gradient(red,blue);
@@ -115,6 +115,10 @@ h1{
 }
 
 
+.todo{
+    height: 100%;
+}
+
 /* Barra lateral izq fixed */
 .barraLateral {
     box-sizing: border-box;
@@ -122,6 +126,7 @@ h1{
     display: inline-block;
     position: absolute;
     margin-left: 20px;
+    margin-top: 5vh;
     /* background-color: gold; */
 }
 
@@ -140,12 +145,15 @@ h1{
     font-size: 30px;
 }
 
+.barraLateral img{
+    border-radius: 2rem;
+}
 
 /* El contenido de la pagina */
 main{
     background: orangered;
     margin-left: max(10%, 200px);
-    margin-top: 5%;
+    margin-top: 0vh;
     width: 85%;
     height: 100%;
     border-radius: 20px;
@@ -187,7 +195,7 @@ main h2{
     background-size: contain;
     position:absolute;
     left: 35rem;
-    top:29.5rem;
+    top:56.2vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -212,7 +220,7 @@ main h2{
     background-size: contain;
     position:absolute;
     left: 69rem;
-    top:29.5rem;
+    top:56.2vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -237,7 +245,7 @@ main h2{
     background-size: contain;
     position:absolute;
     left: 70.5rem;
-    top:29.5rem;
+    top:56.2vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -266,6 +274,7 @@ table, th, td{
     background-position: left, right;
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-text-stroke: 1px white;
 }
 
 .stats{
@@ -333,7 +342,7 @@ table, th, td{
     background-size: contain;
     position:absolute;
     left: 35rem;
-    top:73.6rem;
+    top:132.3vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -358,7 +367,7 @@ table, th, td{
     background-size: contain;
     position:absolute;
     left: 69rem;
-    top:73.6rem;
+    top:132.3vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -383,7 +392,7 @@ table, th, td{
     background-size: contain;
     position:absolute;
     left: 70.5rem;
-    top:73.6rem;
+    top:132.3vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -398,6 +407,7 @@ table, th, td{
     background-position: left, right;
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-text-stroke: 1px white;
 }
 
 #tiempoMedio{
@@ -456,7 +466,7 @@ table, th, td{
     background-size: contain;
     position:absolute;
     left: 35rem;
-    top: 117.6rem;
+    top: 208.5vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -481,7 +491,7 @@ table, th, td{
     background-size: contain;
     position:absolute;
     left: 69rem;
-    top:117.6rem;
+    top:208.5vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -506,7 +516,7 @@ table, th, td{
     background-size: contain;
     position:absolute;
     left: 70.5rem;
-    top:117.6rem;
+    top:208.5vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -521,6 +531,7 @@ table, th, td{
     background-position: left, right;
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-text-stroke: 1px white;
 }
 
 #tiempoDificil{
@@ -580,7 +591,7 @@ table, th, td{
     background-size: contain;
     position:absolute;
     left: 16rem;
-    top: 161.66rem;
+    top: 284.3vh;
     font-family: arial;
     font-weight: bold;
     font-size: 20px;
@@ -596,6 +607,7 @@ table, th, td{
     background-position: left, right;
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-text-stroke: 1px white;
 }
 
 
@@ -649,20 +661,70 @@ footer{
 
 /* Ahora empezamos con el responsive  */
 
-/* movil pantalla grande*/
-@media (max-width: 576px){
-    .titulo h1{        
-        font-size: 20px;
-        line-height: 2;
-        height: 3rem;
+/* ocultamos los textos descriptivos para los moviles */
+@MEDIA (max-width: 576px){
+    
+    .descripcion1{
+        display: none;
     }
 
-    .menu{
-        margin-top: 10px;
+    .descripcion2{
+        display: none;
     }
+
+    .descripcion3{
+        display: none;
+    }
+
+    .descripcion4{
+        display: none;
+    }
+
+    .descripcion5{
+        display: none;
+    }
+
+    .descripcion6{
+        display: none;
+    }
+
+    .descripcion7{
+        display: none;
+    }
+
+    .descripcion8{
+        display: none;
+    }
+
+    .descripcion9{
+        display: none;
+    }
+
+    .descripcion10{
+        display: none;
+    }
+}
+/* movil pantalla grande*/
+@media (min-width: 329px) and (max-width: 576px){
+
+    .titulo{
+        height: 17vh;
+    }
+    .titulo h1{        
+        font-size: 4vh;
+        line-height: 1.5;
+        height: 11vh;
+    -webkit-text-stroke: 1px black;
+    }
+
+    nav{
+        margin-bottom: 10px;
+    }
+
     .menu a{
-        font-size: 15px;
-        margin: 9px;
+        font-size: 2vh;
+        margin: 2vw;
+        text-decoration: none;
     }
 
     .info{
@@ -672,7 +734,7 @@ footer{
     }
 
     .info h2{
-        font-size: 35px;
+        font-size: 5vh;
         color: red;
         margin-top: 11rem;
         -webkit-text-stroke: 1px black;
@@ -680,7 +742,7 @@ footer{
 
     .info p{
         margin-top: 20px;
-        font-size: 17px;
+        font-size: 2.5vh;
     }
 
 
@@ -693,15 +755,17 @@ footer{
         margin: 5px;
         top: 45rem;
         padding: 25px 0;
+        transition: 1s ease;
     }
     
     .barraLateral h2{
+        font-size: 4vh;
         width: 100%;
         letter-spacing: 2px;
     }
     
     .barraLateral h3{
-
+        font-size: 3vh;
         text-align: center;
         width: 100%;
         letter-spacing: 2px;
@@ -715,8 +779,8 @@ footer{
 
     main{
         width: 70%;
-        margin-top: 30rem;
-        margin-left: 7rem;
+        margin-top: 0vh;
+        margin-left: 28vw;
         height: 100%;
     }
 
@@ -750,7 +814,7 @@ footer{
     }
 
     .tabla{
-        width: 16rem;
+        width: 70vw;
         margin: 20px auto;
     }
 
@@ -758,7 +822,7 @@ footer{
         font-size: 17px;
         height: 100px;
         letter-spacing: 4px;
-        -webkit-text-stroke: 1px black;
+        
     }
 
     .tabla td{
@@ -880,12 +944,19 @@ footer{
 
     .SuperEntreno{
         height: 5rem;
+        
+    }
+
+    .SuperEntreno a{
+        display: flex;
+        justify-content: center;
+       height: 100%;
     }
 
     .SuperEntreno img{
-        width: 100%;
-        height: 5rem;
-        justify-content: space-between;
+        width: 70%;
+        height: 100%;
+        
     }
 
     .super1{
@@ -900,49 +971,23 @@ footer{
     }
 
 
-    .descripcion1{
-        display: none;
+
+    footer img{
+        width: 25vw;
+        height: 12vh;
     }
 
-    .descripcion2{
-        display: none;
-    }
-
-    .descripcion3{
-        display: none;
-    }
-
-    .descripcion4{
-        display: none;
-    }
-
-    .descripcion5{
-        display: none;
-    }
-
-    .descripcion6{
-        display: none;
-    }
-
-    .descripcion7{
-        display: none;
-    }
-
-    .descripcion8{
-        display: none;
-    }
-
-    .descripcion9{
-        display: none;
-    }
-
-    .descripcion10{
-        display: none;
+    footer h2{
+        font-size: 5vh;
     }
 }
 
 /* movil mas chico*/  
 @media (max-width: 328px){
+
+    nav{
+        height: 100%;
+    }
 
     .titulo h1{
         -webkit-text-stroke: 0.9px red;
@@ -952,6 +997,7 @@ footer{
     }
 
     .menu{
+        height: 100%;
         margin-top: 10px;
     }
     .menu a{
@@ -961,10 +1007,17 @@ footer{
         margin: 9px;
     }
 
+    .info{
+        height: 90vh;
+        background-position: top,bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 27%, 100% 27%;
+    }
+
     .info h2{
         font-size: 2rem;
         color: red;
-        margin-top: 11rem;
+        margin-top: 25vh;
         -webkit-text-stroke: 1px black;
     }
 
@@ -976,20 +1029,36 @@ footer{
 
 
     .barraLateral {
+        width: 35vw;
         margin: 5px;
         margin-top: 7rem;
         transition: 1s ease;
     }
 
+    .barraLateral h2{
+        font-size: 10vw;
+        letter-spacing: 2px;
+    }
+
+    .barraLateral h3{
+        font-size: 6vw;
+        letter-spacing: 2px;
+    }
+
+    .barraLateral img{
+        width: 100%;
+    }
+
 
     main{
         width: 60%;
-        margin-top: 42rem;
+        margin-left: 38vw;
     }
 
     main h2{
         padding-top: 10px;
         font-size: 20px;
+        letter-spacing: 3px;
     }
 
     .EntrenoFacil{
@@ -1122,8 +1191,17 @@ footer{
     }
 
     .SuperEntreno{
+    
         height: 8rem;
-        align-items: center;
+    }
+
+    .super a{
+        display:flex;
+        justify-content: center;
+    }
+
+    .SuperEntreno img{
+        width: 80%;
     }
 
 
@@ -1147,8 +1225,10 @@ footer{
 
 }
 
-/* horizontal */
-@media (max-height:414px) and (max-width: 794px){
+
+
+/* horizontal movil*/
+@media (max-height:300px) and (max-width: 794px){
 
     h1{
         font-size: 2rem;
@@ -1214,7 +1294,6 @@ footer{
 
 
     main{
-        margin-top: 220px;
         width: 75%;
         margin-left: 20%;
     }
@@ -1223,25 +1302,80 @@ footer{
         letter-spacing: 5px;
     }
 
+
+
+    .EntrenoFacil{
+        height: 30vh;
+    }
+    .facil1{
+        width: 30%;
+    }
+    .facil2{
+        width: 30%;
+    }
+    .facil3{
+        width: 30%;
+    }
+
     .EntrenoFacil img{
         width: 100%;
+        height: 100%;
     }
+
+
+    .EntrenoMedio{
+        height: 30vh;
+    }
+    .medio1{
+        width: 30%;
+    }
+    .medio2{
+        width: 30%;
+    }
+    .medio3{
+        width: 30%;
+    }
+
 
     .EntrenoMedio img{
         width: 100%;
+        height: 100%;
+    }
+
+
+    .EntrenoDificil{
+        height: 30vh;
+    }
+    .dificil1{
+        width: 30%;
+    }
+    .dificil2{
+        width: 30%;
+    }
+    .dificil3{
+        width: 30%;
     }
 
     .EntrenoDificil img{
         width: 100%;
+        height: 100%;
+    }
+
+    .SuperEntreno{
+        height: 40vh;
+    }
+
+    .super{
+        width: 50%;
     }
 
     .SuperEntreno img{
         width: 100%;
-        height: 30vh;
+        height: 100%;
     }
 
     .tabla{
-        width: 80%;
+        width: 85%;
         font-size: 4vw;
     }
 
@@ -1277,4 +1411,5 @@ footer{
     #bardock-Goku{
         margin-top: 20px;
     }
+
 }

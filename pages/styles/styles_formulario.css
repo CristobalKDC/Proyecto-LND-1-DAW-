@@ -7,7 +7,6 @@
 body {
     height: 100vh;
     text-align: center;
-    background-color: rgb(252, 1, 1);
     background-image:linear-gradient(white,grey);
 }
 
@@ -136,8 +135,8 @@ main img{
     border: 2px solid grey;
 }
 
-/* Mi movil */
-@media (max-width: 412px) and (max-height: 622px) {
+/* movil grande */
+@media (max-width: 412px) {
 
     body{
         height: 100%;
@@ -186,6 +185,27 @@ main img{
     }
 
     button{
+        width: 20vw;
+        color: whitesmoke;
+        font-size: 3.5vw;
+        translate: -90px;
+        -webkit-text-stroke: 1px black;
+        margin: 0;
+    }
+
+    main img{
+        width: 28vw;
+        position: absolute;
+        bottom: -46vh;
+        right: 5.5vw;
+    }
+
+}
+
+/* movil chico */
+@media (max-width: 328px){
+    button{
+        width: 20vw;
         color: whitesmoke;
         font-size: 3.5vw;
         translate: -19vw;
@@ -195,14 +215,13 @@ main img{
     main img{
         width: 40vw;
         position: absolute;
-        bottom: -40vh;
+        bottom: -42vh;
         right: 10vw;
     }
-
 }
 
-/* pantalla horizontal */
-@media (max-width: 750px) and (max-height: 322px) {
+/* horizontal movil grande*/
+@media (max-height:412px) and (max-width: 794px) {
 
     body{
         height: 100%;
@@ -268,7 +287,18 @@ main img{
     main img{
         width: 20vw;
         position: absolute;
-        bottom: -203vh;
-        right: 20vw;
+        bottom: -183vh;
+        right: 15vw;
+    }
+}
+
+/* horizontal movil chico*/
+@media (max-height:250px) and (max-width: 794px) {
+
+    main img{
+        width: 20vw;
+        position: absolute;
+        bottom: -214vh;
+        right: 15vw;
     }
 }

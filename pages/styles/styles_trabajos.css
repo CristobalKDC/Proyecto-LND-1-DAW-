@@ -340,7 +340,7 @@ footer{
 
 
 
-/* horizontal movil chico */
+/* horizontal movil grande */
 @media (max-height:300px) and (max-width: 794px){
     .menu{
         height: 10vh;
@@ -408,7 +408,7 @@ footer{
         justify-content: space-between;
     }
     .enlaces img{
-        width: 100%;
+        width: 7vw;
         height: 10vh;
     }
 }
@@ -417,8 +417,8 @@ footer{
 
 
 
-/* horizontal movil grande*/
-@media (max-height:420px) and (max-width: 794px){
+/* horizontal movil chico*/
+@media (min-height: 301px) and (max-height:420px) and (max-width: 794px){
     .menu{
         height: 10vh;
         width: 80%;

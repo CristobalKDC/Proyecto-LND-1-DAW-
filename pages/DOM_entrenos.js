@@ -113,6 +113,7 @@ boton10.addEventListener('click', () => {
     meter.appendChild(nuevoDiv);
 });
 
+//Hacemos que los enlaces tengan retardo para reproducir el sonido y recarga la pagina para evitar que se repita en moviles
 document.addEventListener('DOMContentLoaded', function() {
     // Selecciona todos los elementos <a>
     var links = document.querySelectorAll('main a');
@@ -352,7 +353,7 @@ saiyan.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion10';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "texto explicando entrenoooooooooooooo";
+    nuevoDiv.textContent = "Este super entrenamiento te ha sentirte un verdadero Super Saiyan. Realizaremos 5 rondas de 20 flexiones, 20 abdominales, 20 sentadillas y 100 saltos. Intenta hacerlo como yo con peso y variando los tipos de flexiones para sentirlo en todo su explendor, ¡COMIENZA A ENTRENAR INSECTO!";
     meter4.appendChild(nuevoDiv);
 
 });
@@ -378,7 +379,7 @@ window.addEventListener('scroll', function() {
         // Código para pc
         if (window.scrollY > info.offsetHeight) {
             barrita.style.position = 'fixed';
-            barrita.style.top = '8rem';
+            barrita.style.top = '6rem';
         } else {
             barrita.style.position = 'absolute';
             barrita.style.top = '24rem';
@@ -387,7 +388,7 @@ window.addEventListener('scroll', function() {
             // Código para dispositivos con pantalla de hasta 576px de ancho
         if (window.scrollY > info.offsetHeight) {
             barrita.style.position = 'fixed';
-            barrita.style.top = '8rem';
+            barrita.style.top = '5rem';
         } else {
             barrita.style.position = 'absolute';
             barrita.style.top = '45rem';
@@ -408,7 +409,7 @@ window.addEventListener('scroll', function() {
        
         if (window.scrollY > info.offsetHeight) {
             barrita.style.position = 'fixed';
-            barrita.style.top = '-1.3rem';
+            barrita.style.top = '-2.3rem';
         } else {
             barrita.style.position = 'absolute';
             barrita.style.top = '20rem';

@@ -414,7 +414,7 @@ h2{
 
 
 /* movil pantalla más grande*/
-@media (min-width: 329px) and (max-width: 450px){
+@media (min-width: 329px) and (max-width: 576px){
 
     nav{
         background-size: 20vh;
@@ -563,19 +563,56 @@ h2{
 }
 
 
-
-
-/* horizontal movil chico */
-@media (max-height:300px) and (max-width: 794px){
-    
-}
-
-
-
-
-
 /* horizontal movil grande*/
 @media (max-height:420px) and (max-width: 794px){
+    nav{
+        height: 20vh;
+    }
+    
+    .menu{
+        width: 80%;
+    }
+    /* Aqui cambiamos la fuente de las letras del menu del nav y editamos tamaño y borde */
+    .menu a {
+        text-decoration: none;
+        font-size: 5vh;
+        border: 3px outset;
+    }
+    
+    h1{
+        width: 60%;
+    }
+
+    .sobremi{
+        height: 70vh;
+        background-size: 40% 100%;
+    }
+
+    .miInfo{
+        width: 60%;
+        font-size: 1.3vw;
+    }
+
+
+    h2{
+        margin: 5vh 0 5vh 0;
+        font-size: 5vw;
+        letter-spacing: 2px;
+    }
+
+    .figuras{
+        height: 80vh;
+    }
+
+    .fondo1{
+        
+    }
+}
+
+
+/* horizontal movil chico*/
+@media (max-height:250px) and (max-width: 794px) {
+
     
 }
 
@@ -583,8 +620,3 @@ h2{
 
 
 
-
-/* movil pantalla grande*/
-@media (max-width: 576px){
-  
-}
