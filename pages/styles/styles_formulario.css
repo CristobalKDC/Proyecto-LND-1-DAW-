@@ -40,7 +40,7 @@ nav{
 .menu a:hover {
     color: yellow;
     background: grey;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 0.5px black;
 }
 
 .menu a:visited{
@@ -143,6 +143,7 @@ main img{
     }
     .menu a {
         font-size: 3.5vw;
+        text-decoration: none;
     }
 
     header h1{
