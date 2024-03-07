@@ -138,7 +138,8 @@ h2{
 
 /* Para las transiciones usamos el:transition-timing-function:cubic-bezier(), en esta pagina podemos ajustar como queremos que sea los efectos https://cubic-bezier.com/#1,-0.18,0,1.43 */
 .fondo1 img{
-    width: 5.5vw;
+    width: 7vw;
+    height: 16vh;
     border-radius: 20%;
     /* padding: 10px; */
     transition: 2s ease;
@@ -147,7 +148,8 @@ h2{
 }
 
 .fila1 img:hover{
-    width: 350px;
+    width: 25vw;
+    height: 40vh;
     z-index: 3;
     transform: translate(0,130px);
 }
@@ -187,7 +189,8 @@ h2{
 }
 
 .fondo2 img{
-    width: 5.5vw;
+    width: 7vw;
+    height: 16vh;
     border-radius: 20%;
     /* padding: 10px; */
     transition: 2s ease;
@@ -218,7 +221,8 @@ h2{
 }
 
 .fondo3 img{
-    width: 5.5vw;
+    width: 7vw;
+    height: 16vh;
     border-radius: 20%;
     /* padding: 10px; */
     transition: 2s ease;
@@ -337,8 +341,7 @@ h2{
 
 /* organizarlas una vez tenga todas las fotos, solo estan ajustadas las fondo1 img para que se cuadren dentro del marco y al hacer hover, falta el resto */
 .fondo1 img{
-    width: 25vw;
-        height: 15vh;
+   
 }
 
 .fila1 img:hover{
@@ -605,7 +608,9 @@ h2{
     }
 
     .fondo1{
-        
+        width: 20vw;
+        height: 25vh;
+        background-size: 100% 100%;
     }
 }
 
