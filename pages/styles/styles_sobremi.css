@@ -151,18 +151,67 @@ h2{
     width: 25vw;
     height: 40vh;
     z-index: 3;
-    transform: translate(0,130px);
+    transform: translate(0,10vh);
+}
+
+/* para mover bien la 1 img de la fila 1 */
+.primer img:hover{
+    width: 25vw;
+    height: 40vh;
+    z-index: 3;
+    transform: translate(8vw,10vh);
+}
+
+/* para mover bien la ultima img de la fila 1 */
+.fila1Ulti img:hover{
+    width: 25vw;
+    height: 40vh;
+    z-index: 3;
+    transform: translate(-8vw,10vh);
 }
 
 .filaMedio img:hover{
-    width: 400px;
+    width: 25vw;
+    height: 40vh;
     z-index: 3;
 }
 
-.filaUlti img:hover{
-    width: 400px;
+/* para mover bien la 1 img de las filas de en medio */
+.primerMedio img:hover{
+    width: 25vw;
+    height: 40vh;
     z-index: 3;
-    transform: translate(0,-100px);
+    transform: translate(8vw,0);
+}
+
+.ultiMedio img:hover{
+    width: 25vw;
+    height: 40vh;
+    z-index: 3;
+    transform: translate(-8vw,0);
+}
+
+.filaUlti img:hover{
+    width: 25vw;
+    height: 40vh;
+    z-index: 3;
+    transform: translate(0,-10vh);
+}
+
+/* para mover bien la 1 img de la ultima fila */
+.primerUlti img:hover{
+    width: 25vw;
+    height: 40vh;
+    z-index: 3;
+    transform: translate(8vw,-10vh);
+}
+
+/* para mover bien la ultima img de la ultima fila */
+.finalUlti img:hover{
+    width: 25vw;
+    height: 40vh;
+    z-index: 3;
+    transform: translate(-8vw,-10vh);
 }
 
 .cartas{
@@ -343,11 +392,12 @@ h2{
 
 
 .fila1 img:hover{
-    height: 40vh;
+    height: 30vh;
         width: 50vw;
     z-index: 3;
     transform: translate(0,80px);
 }
+
 
 .filaMedio img:hover{
     width: 400px;

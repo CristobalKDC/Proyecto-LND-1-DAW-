@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    height: 100%;
+}
 body {
-    height: 100vh;
+    height: 100%;
     text-align: center;
     background-image:linear-gradient(white,grey);
 }
