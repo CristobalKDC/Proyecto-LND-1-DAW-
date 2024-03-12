@@ -10,6 +10,8 @@ body {
     height: 100%;
     text-align: center;
     background-image:linear-gradient(white,grey);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav{
@@ -140,9 +142,11 @@ main img{
 /* movil grande */
 @media (max-width: 412px) {
 
-    body{
-        height: 100%;
+    html{
+        height: 135vh;
     }
+
+    
     .menu a {
         font-size: 3.5vw;
         text-decoration: none;
@@ -199,8 +203,8 @@ main img{
     main img{
         width: 28vw;
         position: absolute;
-        bottom: -46vh;
-        right: 5.5vw;
+        bottom: -30vh;
+        right: 9vw;
     }
 
 }
