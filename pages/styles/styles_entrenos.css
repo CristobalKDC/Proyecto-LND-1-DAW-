@@ -25,7 +25,7 @@ body{
 /* Zona nav */
 nav{
     /* background-color: aqua; */
-    margin: 10px 10px 30px 10px;
+    margin: 10px 10px 50px 10px;
     height: 100%;
 }
 
@@ -1415,4 +1415,48 @@ footer{
         margin-top: 20px;
     }
 
+}
+
+/* quitamos descripciones en pc más chico */
+@media (max-height:900px) and (max-width: 1800px){
+
+    .descripcion1{
+        display: none;
+    }
+
+    .descripcion2{
+        display: none;
+    }
+
+    .descripcion3{
+        display: none;
+    }
+
+    .descripcion4{
+        display: none;
+    }
+
+    .descripcion5{
+        display: none;
+    }
+
+    .descripcion6{
+        display: none;
+    }
+
+    .descripcion7{
+        display: none;
+    }
+
+    .descripcion8{
+        display: none;
+    }
+
+    .descripcion9{
+        display: none;
+    }
+
+    .descripcion10{
+        display: none;
+    }
 }
