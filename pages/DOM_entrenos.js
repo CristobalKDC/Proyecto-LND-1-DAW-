@@ -375,7 +375,7 @@ window.addEventListener('scroll', function() {
     var windowHeight = window.innerHeight;
     var windowWidth = window.innerWidth; //con esto cogemos la medida del width que se muestre
 
-    if (windowWidth > 768) {
+    if (windowWidth > 1900) {
         // Código para pc
         if (window.scrollY > info.offsetHeight) {
             barrita.style.position = 'fixed';
@@ -410,6 +410,17 @@ window.addEventListener('scroll', function() {
         if (window.scrollY > info.offsetHeight) {
             barrita.style.position = 'fixed';
             barrita.style.top = '-2.3rem';
+        } else {
+            barrita.style.position = 'absolute';
+            barrita.style.top = '20rem';
+        }
+        
+    }else if (windowWidth <= 1900 && windowWidth >= 800 && windowHeight <= 900) {
+        // Código para menu pc mas chico
+       
+        if (window.scrollY > info.offsetHeight) {
+            barrita.style.position = 'fixed';
+            barrita.style.top = '-7rem';
         } else {
             barrita.style.position = 'absolute';
             barrita.style.top = '20rem';
