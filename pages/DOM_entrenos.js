@@ -225,7 +225,7 @@ medio1.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion4';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "texto explicando entreno";
+    nuevoDiv.textContent = "En este entrenamiento estaremos haciendo plancha por 8 minutos, haciendo variaciones cada 15 segundos.";
     meter2.appendChild(nuevoDiv);
 
 });
@@ -290,7 +290,7 @@ dificil1.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion7';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "texto explicando entreno";
+    nuevoDiv.textContent = "Brutal entrenamiento de media hora, donde haremos 1 minuto de plancha y 30 segundos de descanso, en total 20 minutos de plancha y 10 de descanso";
     meter3.appendChild(nuevoDiv);
 
 });

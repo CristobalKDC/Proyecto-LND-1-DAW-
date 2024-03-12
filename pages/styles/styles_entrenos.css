@@ -1016,7 +1016,7 @@ footer{
     }
 
     .info h2{
-        font-size: 2rem;
+        font-size: 8vw;
         color: red;
         margin-top: 25vh;
         -webkit-text-stroke: 1px black;
@@ -1212,6 +1212,7 @@ footer{
     }
 
     footer h2{
+        font-size: 8vw;
         z-index: 1;
     }
     footer img{
