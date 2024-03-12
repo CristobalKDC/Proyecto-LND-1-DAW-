@@ -246,7 +246,7 @@ medio2.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion5';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "texto explicando entreno";
+    nuevoDiv.textContent = "Entrenamiento de dominadas y flexiones, haremos en cada ronda 5 dominadas y 5 flexiones haciendo diversas variaciones.";
     meter2.appendChild(nuevoDiv);
 
 });
@@ -268,7 +268,7 @@ medio3.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion6';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "texto explicando entreno";
+    nuevoDiv.textContent = "15 minutos de cardio variado donde abarcaremos todo el cuerpo, para quemar grasa y ganar explosividad.";
     meter2.appendChild(nuevoDiv);
 
 });
@@ -310,7 +310,7 @@ dificil2.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion8';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "texto explicando entreno";
+    nuevoDiv.textContent = "30 minutos de ejercicios de cardio donde haremos 2 rondas de ejercicio seguidas, cada una empezara con 1 ejercicio y aumentaremos hasta llegar a 6.";
     meter3.appendChild(nuevoDiv);
 
 });
@@ -330,7 +330,7 @@ dificil3.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion9';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "texto explicando entreno";
+    nuevoDiv.textContent = "Rutina intensa donde haremos bupees y abdominales, haremos 15 y repetiremos bajando 1 las repeticiones hasta llegar a 7 y luego haremos diversas sentadillas hasta llegar a 320.";
     meter3.appendChild(nuevoDiv);
 
 });
