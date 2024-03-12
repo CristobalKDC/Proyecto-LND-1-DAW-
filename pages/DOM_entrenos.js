@@ -202,7 +202,7 @@ facil3.addEventListener('mouseenter', (event) => {
     nuevoDiv = document.createElement('div');
     nuevoDiv.className = 'descripcion3';
     nuevoDiv.id = 'nuevo-div';
-    nuevoDiv.textContent = "Una rutina buena para acabar el entrenamiento, cardio no muy intenso con descansos donde abarcaremos principalmente grupos musculares grandes.";
+    nuevoDiv.textContent = "Una rutina buena para acabar el entrenamiento, cardio no muy intenso sin descanso, donde abarcaremos principalmente grupos musculares grandes.";
     meter.appendChild(nuevoDiv);
 
 });

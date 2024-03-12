@@ -391,23 +391,43 @@ h2{
 /* organizarlas una vez tenga todas las fotos, solo estan ajustadas las fondo1 img para que se cuadren dentro del marco y al hacer hover, falta el resto */
 
 
-.fila1 img:hover{
-    height: 30vh;
-        width: 50vw;
-    z-index: 3;
-    transform: translate(0,80px);
+
+.primer img:hover{
+    width: 95vw;
+    height: 40vh;
+    transform: translate(65px,80px);
 }
 
-
-.filaMedio img:hover{
-    width: 400px;
-    z-index: 3;
+.derechaMovilArribaPrimer img:hover{
+    width: 105vw;
+    height: 40vh;
+    transform: translate(-65px,80px);
 }
 
-.filaUlti img:hover{
-    width: 400px;
+.izquierdaMovil img:hover{
+    width: 95vw;
+    height: 40vh;
     z-index: 3;
-    transform: translate(0,-100px);
+    transform: translate(65px,0px);
+}
+
+.derechaMovil img:hover{
+    width: 95vw;
+    height: 40vh;
+    z-index: 3;
+    transform: translate(-65px,0px);
+}
+
+.izquierdaMovilFinal img:hover{
+    width: 95vw;
+    height: 40vh;
+    transform: translate(65px,-80px);
+}
+
+.derechaMovilFinal img:hover{
+    width: 95vw;
+    height: 40vh;
+    transform: translate(-65px,-80px);
 }
 
 
@@ -643,6 +663,8 @@ h2{
         height: 25vh;
         background-size: 100% 100%;
     }
+
+    
 
 
     .cartas{
